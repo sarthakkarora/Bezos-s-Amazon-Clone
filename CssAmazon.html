@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarthak Bezos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Amazon Ember", Arial, sans-serif;
+        overflow-x: hidden;
+
+    }
+    .navbar{
+        height: 60px;
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    }
+    .navbar-logo{
+        height: 50px;
+        width: 100px;
+    }
+    .logo{
+        background-image: url(./amazon_logo.png);
+        height: 50px;
+        width:100%;
+        border:2px solid transparent;
+        background-size: cover;
+    }
+
+.logo:hover {
+    border: 2px solid white;
+}
+
+.del{
+    color: white;
+    font-size: 0.8rem;
+    color:grey;
+}
+.India{
+    color: white;
+    font-size: 1.1rem;
+    margin-left: 4px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+}
+#abc{
+    filter:invert(1);
+}
+.navbar-location{
+    margin-left: 15px;
+    width: 90px;
+}
+
+.navbar-location:hover{
+    border: 2px solid white;
+
+}
+
+.navbar-search {
+    display: flex;
+    background-color: orange;
+    height: 40px;
+    width: 900px;
+    border-radius: 5px;
+    margin-left:15px;
+
+}
+
+.search {
+    background-color: #f3f3f3;
+    width: 55px;
+    border: #f3f3f3;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    padding-right: 5px;
+}
+
+.navbar-search input {
+    width: 100%;
+    padding-left:10px;
+    border: none;
+    font-size: 1rem;
+}
+
+.search-icon {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    color: #0f1111;
+}
+
+.Language{
+    display:flex;
+    align-items: center;
+    border:none;
+    margin-left:24px;
+    margin-top:4px;
+    padding:3px;
+}
+.lang{
+    display:flex;
+    align-items: center;
+}
+.langu{
+    background-color:#131921; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 1rem;
+    border:none;
+}
+#flag{
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    filter:invert(1);
+}
+.Language:hover{
+    border: 2px solid white;
+}
+
+.sign {
+    color: white;
+    background-color: #131921;
+    width: 130px;
+    max-height: 50px; 
+    overflow: hidden; 
+    margin-left:18px;
+    padding:3px;
+
+}
+
+#sign-1 {
+    font-size: 0.9rem;
+}
+
+#sign-2 {
+    font-size: 1rem;
+    font-weight: 680;
+}
+
+.sign:hover {
+    border: 2px solid white;
+}
+
+.Cart{
+    display:flex;
+    align-items: center;
+    border:none;
+    margin-left:8px;
+    margin-top:2px;
+    padding:3px;
+
+}
+.cartt{
+    display:flex;
+    align-items: center;
+}
+
+#dabba{
+    width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    filter:invert(1);
+}
+.Cart:hover{
+    border: 2px solid white;
+}
+
+#Carat{
+    color: white;
+    background-color: #131921;
+    font-size: 1rem;
+    padding:2px;
+    margin-right: 8px;
+
+}
+
+
+.navbarlite{
+        height: 28px;
+    background-color: #232f3e;
+    display: flex;
+    font-family: inherit;
+    justify-content: flex-start;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    padding-left:8px;
+    font-size: 0.9rem;
+    padding-bottom:4px;
+    }
+
+    i{
+        padding-top:4px;
+    }
+
+.navbarlite > * {
+    margin-right: 1.4rem; /* Adjust the distance between items */
+    text-align: center;
+    padding:3px;
+}
+
+.navbarlite > div:first-child i {
+    margin-right: 0.2rem; /* Adjust the distance between icon and text */
+}
+
+.navbarlite>*:hover{
+    border: 1.5px solid white;
+}
+
+
+.main{
+    background-image: url(https://m.media-amazon.com/images/I/81KkrQWEHIL._SX3000_.jpg);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.msg{
+    font-size: 16.3px;
+    background-color: #ffffff;
+    width: 75%;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.msg a {
+    color: #31869d;
+    text-decoration: dashed;
+} 
+
+.shop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: #e2e7e6;
+}
+
+.box{
+    height: 400px;
+    width: 22%;
+    background-color: white;
+    padding: 20px 0px 15px;
+    margin: 8px;
+}
+
+.shop1{
+    font-size: 15px;
+}
+
+.box1-img{
+    height: 300px;
+    background-size: cover;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.box1-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.shop1 p a{
+      text-decoration: none;
+      color: #007185;
+      font-size: 15px;
+}
+
+/*..................................................................*/
+
+
+
+ .footer1{
+    height: 50px;
+    background-color: #37475a;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ }
+
+
+ .footer2{
+    background-color: #222f3d;
+    color: #fff;
+    height: 360px;
+    display: flex;
+    font-size: 18px;
+    justify-content: space-evenly;
+ }
+
+
+ ul{
+    margin-top:20px;
+    
+ }
+ ul a{
+    color: #ddd;
+    padding: 3px;
+    display: block;
+    font-size: 14px;
+    margin-top: 15px;
+    color: #dddddd;
+    text-decoration: none;
+ }
+
+ .footer3{
+    height: 90px;
+    background-color: #222f3d;
+    color: #fff;
+    border-top: 1px solid rgb(141, 141, 141);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .logo12{
+  background-image: url(./PngItem_1065245.png);
+  height: 40px;
+  width: 180px;
+  display: flex;
+  border: 10px transparent;
+  background-size:cover;
+
+}
+
+.select-op{
+  margin-left: 55px;
+  display: flex;
+}
+
+.select-op select{
+  background: transparent;
+  color: #cccccc;
+  font-size: 13px;
+  text-decoration: none;
+  margin-left: 5px;
+  border: 1px solid #848688;
+  padding: 6px 18px 6px 8px;
+  border-radius: 3px;
+}
+
+ .footer4{
+    background-color: #0f1111;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80px;
+ }
+
+ .pages{
+    font-size: 0.8rem;
+    
+ }
+ .pages a{
+    color: #fff;
+    text-decoration: none;
+ }
+
+ .copyright{
+    font-size: 0.8rem;
+    padding: 5px;
+ }
+
+ /* Add hover effects to navbar items */
+.navbarlite > div:hover {
+    background-color: #37475a;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+/* Add hover effects to footer links */
+.footer2 ul a:hover {
+    color: #fff;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+/* Improve spacing between footer links */
+.footer2 ul {
+    margin-bottom: 20px;
+}
+
+/* Add border radius and box shadow to boxes in shop section */
+.shop-section .box {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add hover effect to boxes in shop section */
+.shop-section .box:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+
+</style>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="navbar-logo">
+                <div class="logo"></div>
+            </div>
+        
+            <div class="navbar-location">
+                <p class="del">Deliver to</p>
+                <div class="icon">
+                    <i id="abc" class="fa-solid fa-location-dot"></i>
+                    <p class="India"><b>India</b></p>
+                </div>
+            </div>
+
+            <div class="navbar-search">
+                <select class="search">
+                  <option>All</option>
+                </select>
+                <input type="text" placeholder="Search Amazon" />
+                <div class="search-icon">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+              </div>
+
+              <div class="Language">
+                <div class="lang">
+                    <i id="flag" class="fa-brands fa-font-awesome"></i>
+                    <select class="langu">
+                        <option><b>EN</b></option>
+                        <option><b>ES</b></option>
+                        <option><b>AR</b></option>
+                        <option><b>DE</b></option>
+                        <option><b>ER</b></option>
+                        <option><b>HE</b></option>
+                        <option><b>DR</b></option>
+                      </select>
+                </div>
+              </div>
+              <div class="sign">
+                <p id="sign-1">Hello, sign in</p>
+                <p id="sign-2">Accounts & list</p>
+              </div>
+
+              <div class="Cart">
+                <div class="cartt">
+                    <i id="dabba" class="fa-solid fa-cart-shopping"></i>
+                    <p id="Carat"><b>Cart</b></p>                
+                </div>
+            </div>
+        </div>
+        
+        <div class="navbarlite">
+            <div>
+                <i class="fa-solid fa-bars"></i>
+                <b>All</b>
+            </div>
+            <div>Fresh</div>
+            <div>Amazon miniTV</div>
+              <div>Best Sellers</div>
+              <div>Today's Deals</div>
+              <div>Prime Deals</div>
+                <div>Electronic</div>
+                  <div>Home and Kitchen</div>
+                    <div>Mobiles</div>
+                    <div>Computer</div>
+                    <div>Books</div>
+                      <div>Fashion</div>
+            <div>Customer Service</div>
+            <div>Gift Cards</div>
+        </div>
+    </header>
+
+    
+<main>
+    <div class="main">
+      <div class="msg">
+        <p>Welcome to Sarthak's Amazon clone, meticulously crafted using HTML and CSS. It mirrors the renowned e-commerce platform, <br> offering a seamless browsing experience akin to the original. <a href="https://www.amazon.in/"> Original website</a></p>
+      </div>
+    </div>
+    <div class="shop">
+      <div class="shop1 box">
+        <div class="box1-content">
+        <h2>Toys Under $30</h2>
+        <div class="box1-img" style="background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_Toys_1X._SY304_CB639759658_.jpg);"></div>
+        <p><a href="#">Shop now</a></p>
+      </div>
+      </div>
+      <div class="shop2 box">
+        <div class="box1-content">
+          <h2>Deals & Promotions</h2>
+          <div class="box1-img" style="background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_SmartWatch_1X._SY304_CB639922137_.jpg);"></div>
+          <p><a href="#">Shop now</a></p>
+        </div>
+      </div>
+      <div class="shop3 box">
+        <div class="box1-content">
+          <h2>Health & Personal Care</h2>
+          <div class="box1-img" style="background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2022/February/DashboardCards/GW_CONS_AUS_HPC_HPCEssentials_CatCard_Desktop1x._SY304_CB627424361_.jpg);"></div>
+          <p><a href="#">Shop now</a></p>
+        </div>
+      </div>
+      <div class="shop4 box">
+        <div class="box1-content">
+          <h2>New arrivals in Toys</h2>
+          <div class="box1-img" style="background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_Toys_1X._SY304_CB639759658_.jpg);"></div>
+          <p><a href="#">Shop now</a></p>
+        </div>
+      </div>        <div class="shop1 box">
+        <div class="box1-content">
+        <h2>For your Fitness Needs</h2>
+        <div class="box1-img" style="background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_Fitness_1X._SY304_CB639748186_.jpg);"></div>
+        <p><a href="#">Shop now</a></p>
+      </div>
+      </div>
+      <div class="shop2 box">
+        <div class="box1-content">
+          <h2>Kindle E readers</h2>
+          <div class="box1-img" style="background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Desktop_Dash_Kindle_1x._SY304_CB639752818_.jpg);"></div>
+          <p><a href="#">Shop now</a></p>
+        </div>
+      </div>
+      <div class="shop3 box">
+        <div class="box1-content">
+          <h2>Home refresh ideas</h2>
+          <div class="box1-img" style="background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/home/THILGMA/SpringEvent2023/XCM_CUTTLE_1559454_3018199_379x304_1X_en_US._SY304_CB592739737_.jpg);"></div>
+          <p><a href="#">Shop now</a></p>
+        </div>
+      </div>
+      <div class="shop4 box">
+        <div class="box1-content">
+          <h2>Shop Laptops & Tablets</h2>
+          <div class="box1-img" style="background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2020/May/Dashboard/Fuji_Dash_Laptops_379x304_1X_en_US._SY304_CB418608471_.jpg);"></div>
+          <p><a href="#">Shop now</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+    <footer>
+        <div class="footer1"><b>Back to Top</b></div>
+
+      <div class="footer2">
+        <ul>
+          <p>Get to Know Us</p>
+           
+          <a href="">Careers</a>
+          <a href="">Blog
+          <a href="">About  Amazon</a>
+          <a href="">Investor Relationsv</a>
+          <a href="">Amazon  Devices</a>
+          <a href="">Amazon  Science</a>
+        </ul>
+
+        <ul>
+          <p>Amazon Payment Products</p>
+           <a href=""> Amazon Business Card</a>
+           <a href=""> Shop with Points</a>
+           <a href=""> Reload Your Balance</a>
+           <a href=""> Amazon Currency Converter</a>
+        </ul>
+
+        <ul>
+          <p>	
+            Make Money with Us
+            </p>
+            <a href="">Sell products on Amazon</a>
+            <a href="">Sell on Amazon Business</a>
+            <a href="">Sell apps on Amazon</a>
+            <a href="">Become an Affiliate</a>
+            <a href="">Advertise Your Products</a>
+            <a href="">Self-Publish with Us</a>
+            <a href="">Host an Amazon Hub</a>
+        </ul>
+
+          <ul>
+            <p>Let Us Help You</p>
+            <a href="">Amazon and COVID-19</a>
+            <a href="">Your Account</a>
+            <a href="">Your Orders</a>
+            <a href="">Shipping Rates & Policies</a>
+            <a href="">Returns & Replacements</a>
+            <a href="">Manage Your Content and Devices</a>
+            <a href="">Amazon Assistant</a>
+            <a href="">Help</a>
+           </ul>
+      </div>
+      <div class="footer3">
+        <div >
+          <img class="logo12"></div>
+
+          <div class="select-op">
+            
+            <div><select class="sele">
+                <option>English</option>
+              </select></div>
+
+
+            <div><select class="sele">
+                <option >$ USD - U.S. Dollar</option>
+              </select></div>
+            
+            <div><select class="sele">
+                <option> United states</option>
+              </select></div>
+          </div>
+        </div>
+      </div>
+      
+      
+
+       
+      <div class="footer4">
+        <div class="pages">
+          <a href="">Conditions of Use</a>
+          <a href="">Privacy Notice</a>
+          <a href="">Your Ads Privacy Choices</a>
+        </div>
+        <div class="copyright">
+          © 1996-2024, Amazon.com, Inc. or its affiliates
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
